@@ -9,11 +9,19 @@
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- external css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- fontstyle link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/4e6639fa7b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- header start -->
-    <header class="d-flex p-5 align-items-center justify-content-center bg-info text-white">
+    <header class="d-flex p-5 align-items-center justify-content-center honda-bg-info text-white">
         <div class="row g-5">
             <div class="col-lg-6 ps-4 col-sm-12 d-flex align-items-center justify-content-center">
                 <div>
@@ -22,7 +30,32 @@
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
                         duis enim
                         velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button class="btn px-5 text-white btn-warning">Purchase</button>
+                    <!-- Button with modal -->
+                    <button type="button" class="btn px-5 border-0 text-white bg-orange btn-warning"
+                        data-bs-toggle="modal" data-bs-target="#purchaseModal">
+                        Purchase
+                    </button>
+                    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="purchaseModalLabel">Purchase</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    Power, performance and total control. side view of red honda cbr 300r super sport
+                                    motorcycle parked on a track
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn text-white btn-warning"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn text-white btn-warning">Proceed Purchase</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
@@ -53,8 +86,64 @@
     </section>
 
     <!-- client section start -->
-    <div class="container my-5">
-
+    <div class="container text-center my-5">
+        <h1>Happy <span class="orange ">Client Says</span></h1>
+        <div class="row g-5">
+            <div class="col-lg-4 col-sm-12 border rounded-1 d-flex align-items-center justify-content-center">
+                <div>
+                    <div>
+                        <img class="m-5 p-5 rounded-circle img-fluid" src="images/user-1.png" alt="">
+                    </div>
+                    <p class="text-dark">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="far fa-star icon-color"></i>
+                    <h5 class="text-primary my-2">Regina Miles</h5>
+                    <h5>Banker</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+                <div>
+                    <div>
+                        <img class="m-5 p-5 rounded-circle img-fluid" src="images/user-2.png" alt="">
+                    </div>
+                    <p class="text-dark">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="far fa-star icon-color"></i>
+                    <h5 class="text-primary my-2">Regina Miles</h5>
+                    <h5>Banker</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+                <div>
+                    <div>
+                        <img class="m-5 p-5 rounded-circle img-fluid" src="images/user-3.jpg" alt="">
+                    </div>
+                    <p class="text-dark">Slate helps you see how
+                        many more days you need
+                        to work to reach your financial
+                        goal for the month and year.</p>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="fas fa-star icon-color"></i>
+                    <i class="far fa-star icon-color"></i>
+                    <h5 class="text-primary my-2">Regina Miles</h5>
+                    <h5>Banker</h5>
+                </div>
+            </div>
+        </div>
     </div>
 
 
